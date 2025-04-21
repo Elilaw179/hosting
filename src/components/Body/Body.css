@@ -1,0 +1,135 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    height: 100%;
+    border: 1px solid red;
+  }
+  
+  .navigations {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .navigations ul {
+    padding: 0;   
+    margin: 0;
+    background-color: inherit
+  }
+  
+  .navigations li {
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigations select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  .navigations select {
+    border: none;
+    background: none;
+    width: 23px;
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .p-acct{
+    display: flex;
+    margin-top: 25rem;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .p-acct img{
+    height: 25px;
+  }
+  .profit-container {
+    width: 500px;
+    display: flex;
+    gap: 1px;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    margin-left: 19.5%;
+    color: rgb(167, 167, 167);
+  }
+  
+  .profit-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profit-container div:hover {
+    color: rgb(52, 52, 178);
+    cursor: pointer;
+  }
+  
+ 
+  .profit-container div:hover hr {
+    background-color: rgb(52, 52, 178);
+  }
+  
+  hr {
+    width: 150px;
+    margin-top: 20px;
+    height: 2px;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    transition: background-color 0.3s;
+  }
+  
+
+
+  @media (max-width:2129px) {
+    
+    .body{
+      grid-template-columns:1.5fr 7fr;
+    }
+
+    .profit-container{
+      margin-left: 10%;
+    }
+
+  }
+
+
+  
+  @media (max-width:1590px) {
+    
+    .navigations{
+      display: none;
+    }
+    .body{
+      display: block;
+    }
+
+    .content{
+      border: 3px solid green;
+    
+    }
+  }
+  
+
+  
