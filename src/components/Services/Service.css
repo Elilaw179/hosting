@@ -1,10 +1,17 @@
-.cards-holder {
+/* .cards-holder {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
   gap: 15px;
   margin-top: 2rem;
  
+} */
+.cards-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 💡 Force 3 columns */
+  gap: 15px;
+  margin-top: 2rem;
 }
+
 
 .services-card {
   width: 100%;
@@ -12,7 +19,7 @@
   border-radius: 20px;
   border: 1px solid rgb(224, 224, 224);
   padding: 10px;
-  background-color: green;
+
 }
 
 .services-container {
@@ -32,7 +39,7 @@
 }
 
 .card-txt {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,4 +85,33 @@
 
 .hide-icon img {
   width: 20px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .cards-holder {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-holder {
+    grid-template-columns: 1fr; /* 1 card on phones */
+  }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .cards-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services-card {
+    height: 200px; /* Adjust height to fit content better */
+    font-size: 0.95rem; /* Optional: slightly reduce text size */
+  }
+
+
 }
