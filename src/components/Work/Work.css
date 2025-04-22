@@ -6,7 +6,7 @@
   background-color: #fff;
 }
 
-.work-cards {
+/* .work-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -19,7 +19,28 @@
   width: 100%;
   max-width: 300px;
   border: 2px solid blue;
+} */
+
+
+
+
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* More natural, consistent spacing */
+  justify-content: flex-start; /* 🔥 keeps cards tight and centered */
+  margin-top: 2rem;
 }
+
+.card {
+  flex: 1 1 280px; /* Grow/shrink smartly between 280px and larger */
+ width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
 
 
 .work-heading {
