@@ -11,3 +11,33 @@ body{
   background-color: rgb(235, 235, 235);
   font-family: "Outfit", sans-serif;
 }
+
+.app{
+  border: 9px solid black;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .body {
+    display: block;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .profit-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    width: 80%;
+  }
+}

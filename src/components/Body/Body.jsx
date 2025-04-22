@@ -36,7 +36,7 @@ const Body = () => {
               </div>
               {item.options && (
                 <select>
-                  <option disabled selected>..</option>
+                  <option disabled selected>---</option>
                   {item.options.map((option, i) => (
                     <option key={i}>{option}</option>
                   ))}

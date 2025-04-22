@@ -63,3 +63,13 @@
 .nav-icons ul li img {
   width: 30px;
 }
+
+
+
+@media (max-width:1600px) {
+
+  .nav{
+    background-color: red;
+    width: 100%;
+  }
+}

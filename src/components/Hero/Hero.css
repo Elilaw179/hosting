@@ -1,22 +1,56 @@
 .hero-container {
-  background-color: #fff;
-  width: 60%;
-  margin: auto;
-  height: 48rem;
-  margin-top: 1rem;
+  width: 90%;
+  margin: 1rem auto;
   border-radius: 20px;
+  background-color: #fff
 }
+
 .hero {
   background-color: rgb(29, 10, 76);
   width: 100%;
-  height: 240px;
   border-radius: 20px;
   padding: 20px;
 }
 
 .hero-text {
-  width: 48%;
+  width: 100%;
   color: #fff;
+}
+
+.hero-input {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.hero-input input {
+  width: 100%;
+  max-width: 570px;
+  height: 60px;
+  font-size: 18px;
+}
+
+.hero-input button {
+  width: 100%;
+  max-width: 140px;
+}
+
+@media (max-width: 768px) {
+  .hero-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-input button,
+  .hero-input input {
+    width: 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
 }
 
 .hero-text h2 {
@@ -28,23 +62,6 @@
   font-weight: 400;
   font-size: 20px;
   color: #c1c1c1;
-}
-
-.hero-input {
-  width: 730px;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero-input input {
-  background-color: none;
-  width: 570px;
-  height: 60px;
-  border-radius: 10px;
-  align-items: center;
-  font-size: 22px;
-  padding: 10px;
 }
 
 .hero-input span {
@@ -60,43 +77,3 @@
   width: 30px;
   height: 30;
 }
-
-.hero-input button {
-  width: 140px;
-  border-radius: 10px;
-  border: none;
-  font-size: 16px;
-  background-color: rgb(52, 52, 178);
-  color: #fff;
-  font-weight: 400;
-}
-
-@media (max-width: 2129px) {
-  .hero-input span {
-    right: 47%;
-  }
-
-  .hero-container {
-    width: 80%;
-  }
-}
-
-@media (max-width: 1913px) {
-  .hero-container {
-    width: 90%;
-  }
-}
-@media (max-width: 1690px) {
-  .hero-container {
-    width: 100%;
-  }
-}
-
-
-
-@media (max-width:1250px) {
-  .hero-container{
-   height: 100%;
-  }
- 
- }

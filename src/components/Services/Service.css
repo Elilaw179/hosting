@@ -1,15 +1,26 @@
-.services-container {
-  margin-top: 30px;
-  height: 500px;
-  padding: 20px;
+.cards-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 2rem;
+  align-items: stretch;
 }
 
-.cards-holder {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+.services-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px;
+  background-color: red;
 }
+
+.services-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid rgb(224, 224, 224);
+}
+
 .services-container h2 {
   font-size: large;
   color: rgb(46, 46, 46);
@@ -19,16 +30,9 @@
 .services-card img {
   width: 20px;
 }
-.services-card {
-  border: 1px solid rgb(224, 224, 224);
-  width: 410px;
-  height: 160px;
-  padding: 10px;
-  border-radius: 20px;
-}
 
 .card-txt {
-  width: 370px;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,13 +41,13 @@
 }
 .card-txt p {
   padding: 3px;
-  color: rgb(129, 129, 129);;
+  color: rgb(129, 129, 129);
 }
 .green-txt {
   display: flex;
   align-items: center;
 }
-.green-txt p{
+.green-txt p {
   color: rgb(32, 209, 186);
 }
 
@@ -56,73 +60,21 @@
   color: rgb(46, 46, 46);
   font-weight: 800;
 }
-.hide-icon{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    margin: auto;
-    margin-top: 3rem;
-    align-items: center;
-    gap: 10px;
+.hide-icon {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin: auto;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 10px;
 }
 
-.hide-icon p{
-    color: rgb(108, 23, 130);
-    font-weight: bold;
+.hide-icon p {
+  color: rgb(108, 23, 130);
+  font-weight: bold;
 }
 
-.hide-icon img{
-    width: 20px;
-}
-
-
-
-
-@media (max-width:2129px) {
-
-
-  .services-card{
-    width: 380px;
-    border: 1px solid green;
-    padding: 10px;
-  }
-}
-
-
-
-
-@media (max-width:1250px) {
-  .services-container{
-    width: 100%;
-    height: 100%;
-  }
-  .cards-holder{
-    border: 1px solid blue;
-    grid-template-columns: repeat(2,3fr);
-    width: 100%;
-    padding: 0px;
-    justify-content: center;
-  
-  }
-  
-  .services-card{
-    background-color: red;
-    width: 95%;   
-    
-  }
-
-  
-.card-txt{
-  border: 2px solid yellow;
-  width: 90%;
-}
-
-
-}
-
-@media (max-width:1250px) {
- .services-container{
-  border: 2px solid yellowgreen;
- }
-
+.hide-icon img {
+  width: 20px;
 }
