@@ -131,10 +131,17 @@ hr {
 
 @media (max-width: 768px) {
   .profit-container div {
-    width: 100%;
+    width: 120px;
     text-align: center;
+    
+
   }
 
+  .profit-container{
+   width: 100%;
+   gap: -10px;
+    padding: 0;
+  }
   hr {
     width: 100px;
   }

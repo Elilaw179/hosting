@@ -6,21 +6,6 @@
   background-color: #fff;
 }
 
-/* .work-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  margin-top: 2rem;
-  background-color: red;
-}
-
-.card {
-  width: 100%;
-  max-width: 300px;
-  border: 2px solid blue;
-} */
-
 
 
 
@@ -28,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px; /* More natural, consistent spacing */
+
   justify-content: flex-start; /* 🔥 keeps cards tight and centered */
   margin-top: 2rem;
 }
@@ -38,7 +24,6 @@
   padding: 20px;
   border-radius: 12px;
   background-color: #fdfdfd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 
@@ -79,3 +64,10 @@
   color: rgb(129, 129, 129);
 }
 
+
+
+@media (max-width:768px) {
+  .work-container{
+    width: 100%;
+  }
+}

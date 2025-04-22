@@ -38,6 +38,10 @@
 }
 
 @media (max-width: 768px) {
+
+  .hero-container{
+    width: 100%;
+  }
   .hero-input {
     flex-direction: column;
     align-items: stretch;
