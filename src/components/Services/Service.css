@@ -12,7 +12,6 @@
   border-radius: 20px;
   border: 1px solid rgb(224, 224, 224);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-
   padding: 10px;
 }
 
@@ -20,6 +19,7 @@
   margin-top: 30px;
   padding: 20px;
   border: 1px solid rgb(224, 224, 224);
+ 
 }
 
 .services-container h2 {
@@ -39,7 +39,6 @@
   align-items: center;
   padding: 10px;
   margin-left: 5px;
-  border: 1px solid white;
 }
 .card-txt p {
   padding: 3px;
@@ -88,8 +87,16 @@
 }
 
 @media (max-width: 768px) {
+  .services-container{
+    margin-top: 1px;
+    
+  }
   .cards-holder {
     grid-template-columns: 1fr;
+  }
+  .card-txt img {
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -101,5 +108,15 @@
   .services-card {
     height: 225px;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hide-icon p{
+    font-size: 10px;
+  }
+  .hide-icon img{
+    width: 15px;
+    height: 15px;
   }
 }

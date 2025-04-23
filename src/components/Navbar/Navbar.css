@@ -93,6 +93,10 @@
   .logo{
     margin-left: 1px;
   }
+  .logo img{
+    width: 27px;
+    height: 27px;
+  }
 
 }
 

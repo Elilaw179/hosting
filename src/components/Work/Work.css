@@ -68,8 +68,14 @@
 
 
 @media (max-width: 500px) {
+  .work-heading div p{
+  font-weight: bold;
+    font-size: 10px;
+  }
   .work-heading div{
     gap: 7px;
+    justify-content:end;
+    width: 40%;
   }
   .work-heading div img{
     width: 15px;
