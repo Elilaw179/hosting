@@ -1,5 +1,10 @@
+
+
+
 import React from "react";
 import "./Body.css";
+import Hero from "../Hero/Hero";
+import Work from "../Work/Work";
 
 import billing_icon from "../../assets/billing.png";
 import business_icon from "../../assets/business.png";
@@ -9,8 +14,6 @@ import email_icon from "../../assets/email.png";
 import home_icon from "../../assets/home.png";
 import tick_icon from "../../assets/tick.png";
 import group_icon from "../../assets/groups.png";
-import Hero from "../Hero/Hero";
-import Work from "../Work/Work";
 
 const navItems = [
   { label: "Home", icon: home_icon },
@@ -23,10 +26,10 @@ const navItems = [
   { label: "Marketplace", icon: coins_icon, options: ["abc", "def", "ghi", "jkl", "mno", "pqr", "stu"] },
 ];
 
-const Body = () => {
+const Body = ({ showSidebar }) => {
   return (
     <div className="body">
-      <nav className="navigations">
+      <nav className={`navigations ${showSidebar ? "sidebar-visible" : ""}`}>
         <ul>
           {navItems.map((item, index) => (
             <li key={index}>
@@ -46,21 +49,18 @@ const Body = () => {
           ))}
           <div className="p-acct">
             <img src={group_icon} alt="" />
-            <ul>
-              <li>Account Sharing</li>
-            </ul>
+            <ul><li>Account Sharing</li></ul>
           </div>
         </ul>
       </nav>
       <div className="content">
         <div className="profit-container">
-          <div><p>Refer & earn</p>< hr  /> </div>
-         <div> <p>My earnings</p>< hr /></div>
-        </div> 
-        <Hero/>
-        <Work/>
+          <div><p>Refer & earn</p><hr /></div>
+          <div><p>My earnings</p><hr /></div>
+        </div>
+        <Hero />
+        <Work />
       </div>
-      
     </div>
   );
 };

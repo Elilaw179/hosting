@@ -15,20 +15,6 @@ const Hero = () => {
             </h2>
             <p>Get a 40% commission for Cloud VPS plans untill April 20th</p>
           </div>
-{/* 
-          <div className="hero-input">
-            <input
-              type="text"
-              name="text"
-              placeholder="https://hostingerdsjkchdhskchfbvjcjjcjj"
-            />
-            <span>
-              <img src={pen_icon} alt="" />
-            </span>
-            <button>Copy link</button>
-          </div>
-           */}
-
 
 <div className="hero-input">
   <div className="input-wrapper">
