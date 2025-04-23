@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import i_icon from "../../assets/i.png";
+
 import star_icon from "../../assets/star.png";
 import right_icon from "../../assets/right_arrow.png";
 import top_icon from "../../assets/pupletop.png";

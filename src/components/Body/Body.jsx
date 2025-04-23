@@ -1,6 +1,5 @@
 
 
-
 import React from "react";
 import "./Body.css";
 import Hero from "../Hero/Hero";
@@ -14,6 +13,8 @@ import email_icon from "../../assets/email.png";
 import home_icon from "../../assets/home.png";
 import tick_icon from "../../assets/tick.png";
 import group_icon from "../../assets/groups.png";
+import mssg_icon from "../../assets/mssg.png";
+import Earning from "../Earning/Earning";
 
 const navItems = [
   { label: "Home", icon: home_icon },
@@ -60,7 +61,15 @@ const Body = ({ showSidebar }) => {
         </div>
         <Hero />
         <Work />
+        <Earning/>
       </div>
+
+      {/* <span>
+      <div className="mssg">
+          <div><img src={mssg_icon} alt="" /></div>
+          <div><img src={mssg_icon} alt="" /></div>
+        </div>
+      </span> */}
     </div>
   );
 };

@@ -106,7 +106,11 @@ hr {
   transition: background-color 0.3s;
 }
 
-/* 🔻 Tablet + Mobile */
+
+
+
+
+
 @media (max-width: 1024px) {
   .body {
     grid-template-columns: 1fr;
@@ -198,3 +202,20 @@ hr {
     width: 100px;
   }
 }
+
+
+/* 
+.mssg{
+background-color: red;
+height: 350px;
+width: 100px;
+margin-top: 10rem;
+display: block;
+margin-left: auto;
+}
+
+.mssg div{
+  background-color: green;
+  width: 5rem;
+  margin-top: 15rem;
+} */

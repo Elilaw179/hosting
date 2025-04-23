@@ -39,6 +39,7 @@
   justify-content: center;
   gap: 10px;
   align-items: center;
+ 
 }
 
 .work-heading div p {
@@ -80,7 +81,6 @@
   .work-heading div img{
     width: 15px;
     height: 15px;
-
   }
 }
 

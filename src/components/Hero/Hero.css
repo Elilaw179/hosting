@@ -107,7 +107,12 @@
   }
 
   .hero-input button {
-    height: 40px;
+    height: 35px;
+    width: 97px;
+    font-size: 13px;
+  }
+  .input-wrapper input{
+    height: 47px;
   }
   .input-wrapper input{
     padding-right: 50px;

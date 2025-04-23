@@ -1,0 +1,31 @@
+.earning-container{
+    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+}
+
+.earning-cards{
+    border: 2px solid yellow;
+    
+}
+
+.pay-card{
+    border: 2px solid blue;
+    height: 170px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.pay-card div{
+    display: flex;
+    background-color: red;
+    gap: 10px;
+    align-items: center;
+}
+
+.pay-card div h4{
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    font-size: 20px;
+    
+}
