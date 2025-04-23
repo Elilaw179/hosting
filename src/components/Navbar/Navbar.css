@@ -111,3 +111,18 @@
 
 
 }
+
+@media (max-width:316px) {
+.anounce{
+display: none;
+  }
+  .logo{
+    gap: 2px;
+  }
+  .logo img{
+    width: 20px;
+  }
+  .logo p{
+ font-size: 10px;
+  }
+}

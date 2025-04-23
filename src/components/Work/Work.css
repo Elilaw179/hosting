@@ -6,27 +6,22 @@
   background-color: #fff;
 }
 
-
-
-
 .work-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* More natural, consistent spacing */
+  gap: 30px;
 
-  justify-content: flex-start; /* 🔥 keeps cards tight and centered */
+  justify-content: flex-start;
   margin-top: 2rem;
 }
 
 .card {
-  flex: 1 1 280px; /* Grow/shrink smartly between 280px and larger */
- width: 100%;
+  flex: 1 1 280px;
+  width: 100%;
   padding: 20px;
   border-radius: 12px;
   background-color: #fdfdfd;
 }
-
-
 
 .work-heading {
   display: flex;
@@ -43,12 +38,12 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  align-items: center;
 }
 
 .work-heading div p {
   color: rgb(108, 23, 130);
 }
-
 
 .card h4 {
   color: rgb(46, 46, 46);
@@ -64,10 +59,22 @@
   color: rgb(129, 129, 129);
 }
 
-
-
-@media (max-width:768px) {
-  .work-container{
+@media (max-width: 768px) {
+  .work-container {
     width: 100%;
   }
+  
 }
+
+
+@media (max-width: 500px) {
+  .work-heading div{
+    gap: 7px;
+  }
+  .work-heading div img{
+    width: 15px;
+    height: 15px;
+
+  }
+}
+

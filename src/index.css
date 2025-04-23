@@ -19,25 +19,3 @@ body{
 }
 
 
-
-@media (max-width: 768px) {
-  .body {
-    display: block;
-  }
-
-  .navigations {
-    display: none;
-  }
-
-  .content {
-    padding: 10px;
-  }
-
-  .profit-container {
-    align-items: center;
-  }
-
-  hr {
-    width: 80%;
-  }
-}

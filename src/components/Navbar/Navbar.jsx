@@ -25,11 +25,11 @@ const Navbar = () => {
               <img src={male_icon} alt="" />
             </li>
           </div>
-          <li>
+          <li className="anounce" >
               <img src={anounce_icon} alt="" />
               <span className="cart-value">1</span>
             </li>
-            <li >
+            <li className="list-icon" >
               <img  src={list_icon} alt="" />
             </li>
           </ul>

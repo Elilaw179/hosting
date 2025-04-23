@@ -22,10 +22,10 @@
 .navigations li {
   list-style: none;
   padding: 15px 10px;
-  font-size: 22px;
+  font-size: 17px;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navigations select:focus {
@@ -66,6 +66,7 @@
   margin-top: 25rem;
   align-items: center;
   gap: 10px;
+
 }
 
 .p-acct img {
@@ -76,12 +77,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   font-weight: bolder;
   color: rgb(167, 167, 167);
   width: 90%;
-  background-color: white;
   margin: auto;
 }
 
@@ -130,17 +130,25 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .body {
+    display: block;
+  }
   .profit-container div {
     width: 120px;
     text-align: center;
     
 
   }
+  .navigations {
+    display: none;
+  }
+
 
   .profit-container{
    width: 100%;
    gap: -10px;
     padding: 0;
+    align-items: center
   }
   hr {
     width: 100px;
@@ -152,10 +160,4 @@ hr {
 }
 
 
-@media (min-width: 1015px) and (max-width: 1162px){
 
-
-  .content{
-
-  }
-}
