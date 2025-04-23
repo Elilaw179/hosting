@@ -20,7 +20,7 @@
 
 .logo p {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .nav-icons {
@@ -67,6 +67,12 @@
   display: none;
 }
 
+.big-srn-navs-icons{ 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+}
 
 @media (max-width:1024px) {
   .list-icon{
@@ -83,10 +89,6 @@
   .nav-icons{
     margin-right: 1px;
   }
-  /* .nav{
-   
-    background-color: green;
-  } */
 
   .logo{
     margin-left: 1px;
@@ -99,7 +101,9 @@
 
 @media (max-width:500px) {
 
-  
+  .big-srn-navs-icons{
+    display: none;
+  }
 
  .list-icon{
   display: block;
