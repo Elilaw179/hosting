@@ -16,7 +16,7 @@ import group_icon from "../../assets/groups.png";
 import mssg_icon from "../../assets/mssg.png";
 import Earning from "../Earning/Earning";
 
-const navItems = [
+const navItems = [   
   { label: "Home", icon: home_icon },
   { label: "Websites", icon: business_icon },
   { label: "Domain", icon: domain_icon, options: ["abcghjfjghj", "def"] },

@@ -11,9 +11,10 @@
 
 .pay-card{
     border: 2px solid blue;
-    height: 170px;
-    width: 500px;
+    min-height: 250px;
+   max-width: 500px;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .pay-card div{
@@ -21,6 +22,7 @@
     background-color: red;
     gap: 10px;
     align-items: center;
+  
 }
 
 .pay-card div h4{
@@ -28,4 +30,17 @@
     font-weight: bold;
     font-size: 20px;
     
+}
+
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-card hr{
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
