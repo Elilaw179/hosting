@@ -4,7 +4,7 @@ import "./Navbar.css";
 import faq_icon from "../../assets/faq.png";
 import logo_icon from "../../assets/logo-h.png";
 import male_icon from "../../assets/male_user.png";
-import anounce_icon from "../../assets/anounce.png";
+import anounce_icon from "../../assets/anouncement.png";
 import list_icon from "../../assets/blcklist.png";
 
 const Navbar = ({ toggleSidebar }) => {
