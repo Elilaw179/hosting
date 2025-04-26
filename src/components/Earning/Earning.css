@@ -1,5 +1,5 @@
 .earning-container {
-border: 2px solid red;
+  border: 2px solid red;
   width: 90%;
   margin: auto;
 }
@@ -8,15 +8,13 @@ border: 2px solid red;
   border: 2px solid yellow;
   display: grid;
   grid-template-columns: 3fr 1.5fr 1.5fr;
-  height: 100%;
   gap: 20px;
-  
+  height: 100%;
 }
 
+/* Big Card */
 .pay-card {
   height: 100%;
-  /* height: 320px;
-  width: 600px; */
   border-radius: 15px;
   padding: 25px;
   background-color: #fff;
@@ -28,6 +26,7 @@ border: 2px solid red;
   gap: 20px;
   align-items: center;
 }
+
 .com-div img {
   width: 30px;
   height: 30px;
@@ -43,45 +42,39 @@ border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   margin-top: 2rem;
   width: 99%;
   font-weight: bolder;
-  padding-top: 10px;
 }
 
 .amount h1 {
   color: blue;
   font-size: 50px;
 }
+
 .amount h3 {
   font-weight: 700;
   font-size: 20px;
 }
+
 .pay-card hr {
   width: 99%;
   height: 10px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   border-radius: 10px;
   background-color: rgb(235, 235, 235);
 }
 
 .com-approval {
   margin-top: 12px;
-}
-.com-approval {
   font-size: 18px;
 }
 
 .payout-method {
   display: flex;
   align-items: start;
-  text-align: center;
   gap: 10px;
   margin-top: 35px;
-}
-.payout-method p {
   font-size: 18px;
 }
 
@@ -89,28 +82,30 @@ border: 2px solid red;
   color: blue;
 }
 
+/* Small Cards */
 .total-com {
-  /* min-height: 200px;
-  width: 300px; */
   background-color: yellow;
   border-radius: 15px;
   text-align: center;
+  padding: 15px 0;
 }
+
 .total-com div {
   background-color: green;
-  min-height: 70%;
-  min-width: 90%;
-  margin: auto;
-  margin-top: 15%;
-  padding: 10px;
+  min-height: 150px;
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 15px;
+  border-radius: 10px;
 }
+
 .total-com div img {
   width: 40px;
   height: 40px;
   background-color: rgb(235, 235, 235);
-  box-shadow: rgb(235, 235, 235);
   border-radius: 50px;
 }
+
 .total-com div h1 {
   margin-top: 15px;
   font-size: 50px;
@@ -121,46 +116,209 @@ border: 2px solid red;
   margin-top: 18px;
 }
 
-/* @media (max-width: 1600px) {
-  .total-com div {
-    margin-top: 60px;
-  }
-} */
+/* Referral Section */
+.ref-content {
+  border: 2px solid yellow;
+  width: 50%;
+  text-align: center;
+  margin: 3% auto 0;
+}
 
-@media (max-width: 1450px) {
-  .earning-container {
-    overflow-x: auto;
-  }
+.ref-content img {
+  max-width: 350px;
+  height: 250px;
+  margin: auto;
+}
 
+.referral-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  background-color: red;
+  margin: auto;
+}
+
+.referral-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  flex: 1;
+}
+
+.referral-input-wrapper input {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  padding-right: 45px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.referral-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.referral-input-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.referral-input button {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(52, 52, 178);
+  color: white;
+  padding: 0 20px;
+  width: 70px;
+  height: 90px;
+}
+
+.referral-input button img {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  padding: 4px;
+}
+
+.referral-container {
+  border: 2px solid green;
+  border-radius: 15px;
+  height: 500px;
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Adjust total-com and earning-cards between 1000px and 1700px */
+@media (min-width: 1000px) and (max-width: 1700px) {
   .earning-cards {
-    min-width: 1050px;
-    width: max-content;
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+  }
+
+  .pay-card,
+  .total-com {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .total-com div {
+    width: 100%;
+    min-height: 160px;
+    margin: 20px 0 0 0;
+    padding: 20px;
   }
 }
 
 
+
+
+
+/* ✅ Responsive Breakpoints */
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+  .earning-cards {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .earning-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pay-card {
+    grid-column: span 2;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .earning-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pay-card, .total-com {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .total-com div {
+    width: 95%;
+    min-height: 130px;
+    padding: 12px;
+  }
+
+  .ref-content {
+    width: 85%;
+  }
+
   .earning-container {
     width: 100%;
   }
- 
-} 
 
-
-@media (max-width: 600px) {
-  .earning-cards {
-    display: block;
-  grid-template-columns: 1fr;
-overflow-x: hidden;
+  .referral-input {
+    flex-direction: column;
+    align-items: stretch;
   }
-.pay-card{
-  width: 47%;
-}
-.total-com{
-  width: 47%;
+
+  .referral-input-wrapper input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .referral-input button {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .referral-container {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .ref-content img {
+    max-width: 90%;
+    height: auto;
+  }
 }
 
-  
-}
+/* Extra Small */
+@media (max-width: 500px) {
+  .ref-content {
+    width: 95%;
+  }
 
+  .referral-input button {
+    height: 45px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .referral-input-wrapper input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .referral-input-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}

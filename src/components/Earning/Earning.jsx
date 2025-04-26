@@ -3,6 +3,9 @@ import "./Earning.css";
 import i_icon from "../../assets/i.png";
 import group_icon from "../../assets/groups.png";
 import gift_icon from "../../assets/gift.png";
+import pen_icon from "../../assets/pen.png";
+import copy_icon from "../../assets/copy.png";
+import hands_shake from "../../assets/hand_shake.webp";
 
 const Earning = () => {
   return (
@@ -29,21 +32,47 @@ const Earning = () => {
         </div>
 
         <div className="total-com">
-         <div > <img src={gift_icon} alt="" />
-         <h1>$0</h1>
-         <p>Total commission paid out </p>
-         </div>
-        
+          <div>
+            <img src={gift_icon} alt="" />
+            <h1>$0</h1>
+            <p>Total commission paid out </p>
+          </div>
         </div>
         <div className="total-com">
-         <div > <img src={group_icon} alt="" />
-         <h1> 0</h1>
-         <p>Total referrals </p>
-         </div>
-        
+          <div>
+          
+            <img src={group_icon} alt="" />
+            <h1> 0</h1>
+            <p>Total referrals </p>
+          </div>
         </div>
       </div>
-      .
+      <div className="referral-container">
+        <div className="ref-content">
+          <img src={hands_shake} alt="" />
+          <h3>
+            Refer a friend and earn a 40% commission for Cloud and VPS (20% for
+            Web Hosting plans).
+          </h3>
+          <p>They 'll get 20% discount too</p>
+
+          <div className="referral-input">
+            <div className="referral-input-wrapper">
+              <span className="referral-input-icon">
+                <img src={pen_icon} alt="" />
+              </span>
+              <input
+                type="text"
+                name="text"
+                placeholder="https://hostingerdsjkchdhskchfbvjcjjcjj"
+              />
+            </div>
+            <button>
+              <img src={copy_icon} alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
