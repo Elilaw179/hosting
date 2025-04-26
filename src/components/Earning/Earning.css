@@ -1,5 +1,5 @@
 .earning-container {
-  border: 2px solid red;
+border: 2px solid red;
   width: 90%;
   margin: auto;
 }
@@ -7,16 +7,17 @@
 .earning-cards {
   border: 2px solid yellow;
   display: grid;
-grid-template-columns: 3fr 2fr 2fr;
+  grid-template-columns: 3fr 1.5fr 1.5fr;
   height: 100%;
-  background-color: red;
   gap: 20px;
+  
 }
 
 .pay-card {
+  height: 100%;
   /* height: 320px;
   width: 600px; */
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 25px;
   background-color: #fff;
   border: 2px solid blue;
@@ -24,10 +25,10 @@ grid-template-columns: 3fr 2fr 2fr;
 
 .com-div {
   display: flex;
-  gap:20px;
+  gap: 20px;
   align-items: center;
 }
-.com-div img{
+.com-div img {
   width: 30px;
   height: 30px;
 }
@@ -80,7 +81,7 @@ grid-template-columns: 3fr 2fr 2fr;
   gap: 10px;
   margin-top: 35px;
 }
-.payout-method p{
+.payout-method p {
   font-size: 18px;
 }
 
@@ -92,12 +93,12 @@ grid-template-columns: 3fr 2fr 2fr;
   /* min-height: 200px;
   width: 300px; */
   background-color: yellow;
-  border-radius: 30px;
+  border-radius: 15px;
   text-align: center;
 }
 .total-com div {
   background-color: green;
- min-height: 70%;
+  min-height: 70%;
   min-width: 90%;
   margin: auto;
   margin-top: 15%;
@@ -119,3 +120,47 @@ grid-template-columns: 3fr 2fr 2fr;
   font-size: 18px;
   margin-top: 18px;
 }
+
+/* @media (max-width: 1600px) {
+  .total-com div {
+    margin-top: 60px;
+  }
+} */
+
+@media (max-width: 1450px) {
+  .earning-container {
+    overflow-x: auto;
+  }
+
+  .earning-cards {
+    min-width: 1050px;
+    width: max-content;
+    flex-wrap: nowrap;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .earning-container {
+    width: 100%;
+  }
+ 
+} 
+
+
+@media (max-width: 600px) {
+  .earning-cards {
+    display: block;
+  grid-template-columns: 1fr;
+overflow-x: hidden;
+  }
+.pay-card{
+  width: 47%;
+}
+.total-com{
+  width: 47%;
+}
+
+  
+}
+

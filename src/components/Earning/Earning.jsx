@@ -37,7 +37,7 @@ const Earning = () => {
         </div>
         <div className="total-com">
          <div > <img src={group_icon} alt="" />
-         <h1>$0</h1>
+         <h1> 0</h1>
          <p>Total referrals </p>
          </div>
         
