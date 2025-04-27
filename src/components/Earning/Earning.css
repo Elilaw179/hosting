@@ -1,5 +1,4 @@
 .earning-container {
-  /* border: 2px solid red; */
   width: 90%;
   margin: auto;
 }
@@ -80,7 +79,6 @@
   color: blue;
 }
 
-/* Small Cards */
 .total-com {
   background-color: #fff;
   border-radius: 15px;
@@ -122,8 +120,6 @@
   background-color: #fff;
 }
 
-
-/* Referral Section */
 .ref-content {
   width: 70%;
   text-align: center;
@@ -132,11 +128,11 @@
   background-color: #fff;
 }
 
-.ref-content p{
+.ref-content p {
   margin-top: 1rem;
   color: rgb(174, 174, 174);
 }
-.ref-content h3{
+.ref-content h3 {
   margin-top: 2rem;
 }
 
@@ -175,7 +171,6 @@
   border: none;
   outline: none;
   background-color: rgb(235, 235, 235);
-
 }
 
 .referral-input-icon {
@@ -209,21 +204,41 @@
   padding: 4px;
 }
 
+.faq-container {
+  margin-top: 2rem;
+}
 
+.faq-container h2 {
+  text-align: center;
+}
 
-@media (max-width: 1600px){
+.questions {
+  margin-top: 1rem;
+}
 
-  .referral-input{
+.questions div {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.questions img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1600px) {
+  .referral-input {
     width: 100%;
     gap: 10px;
   }
 }
-
-
-/* Adjust total-com and earning-cards between 1000px and 1700px */
 @media (min-width: 1000px) and (max-width: 1700px) {
   .earning-cards {
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
@@ -243,20 +258,12 @@
   }
 }
 
-
-
-
-
-/* ✅ Responsive Breakpoints */
-
-/* Large Tablets */
 @media (max-width: 1200px) {
   .earning-cards {
     grid-template-columns: 2fr 1fr 1fr;
   }
 }
 
-/* Tablets */
 @media (max-width: 992px) {
   .earning-cards {
     grid-template-columns: 1fr 1fr;
@@ -267,7 +274,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .earning-cards {
     display: flex;
@@ -275,7 +281,8 @@
     gap: 20px;
   }
 
-  .pay-card, .total-com {
+  .pay-card,
+  .total-com {
     width: 100%;
     max-width: 100%;
   }
@@ -322,7 +329,6 @@
   }
 }
 
-/* Extra Small */
 @media (max-width: 500px) {
   .ref-content {
     width: 95%;
