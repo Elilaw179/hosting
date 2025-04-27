@@ -45,7 +45,7 @@
 }
 
 .amount h1 {
-  color: blue;
+  color: rgb(52, 52, 178);;
   font-size: 50px;
 }
 
@@ -275,6 +275,12 @@
 }
 
 @media (max-width: 768px) {
+  
+.amount h1 {
+
+  font-size: 30px;
+}
+
   .earning-cards {
     display: flex;
     flex-direction: column;

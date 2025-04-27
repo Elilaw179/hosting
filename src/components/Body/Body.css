@@ -19,7 +19,6 @@
 }
 
 .navigations li {
-  
   list-style: none;
   padding: 25px 10px;
   font-size: 18px;
@@ -84,22 +83,19 @@
   margin: auto;
 }
 
-.profit-container div {
+.tab-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.profit-container div:hover {
-  color: rgb(52, 52, 178);
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.profit-container div:hover hr {
-  background-color: rgb(52, 52, 178);
+.tab-item p {
+  font-weight: bold;
 }
 
-hr {
+.tab-item hr {
   width: 150px;
   margin-top: 20px;
   height: 2px;
@@ -108,10 +104,21 @@ hr {
   transition: background-color 0.3s;
 }
 
+.tab-item.active {
+  color: rgb(52, 52, 178);
+}
 
+.tab-item.active hr {
+  background-color: rgb(52, 52, 178);
+}
 
+.tab-item:hover {
+  color: rgb(52, 52, 178);
+}
 
-
+.tab-item:hover hr {
+  background-color: rgb(52, 52, 178);
+}
 
 @media (max-width: 1024px) {
   .body {
@@ -195,29 +202,47 @@ hr {
     align-items: center;
   }
 
-  .profit-container div {
-    width: 120px;
-    text-align: center;
-  }
-
-  hr {
+  .tab-item hr {
     width: 100px;
   }
 }
 
+@media (max-width: 500px) {
+  .profit-container {
+    justify-content: center;
+  }
 
-/* 
-.mssg{
-background-color: red;
-height: 350px;
-width: 100px;
-margin-top: 10rem;
-display: block;
-margin-left: auto;
+  .tab-item {
+    margin-right: 10px;
+  }
 }
 
-.mssg div{
-  background-color: green;
-  width: 5rem;
-  margin-top: 15rem;
-} */
+.mssg-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(52, 52, 178);
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.mssg-fixed img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+  .mssg-fixed {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .mssg-fixed img {
+    width: 30px;
+    height: 30px;
+  }
+}

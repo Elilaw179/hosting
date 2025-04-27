@@ -1,9 +1,10 @@
 
 
-import React from "react";
+import React, { useState } from "react";
 import "./Body.css";
 import Hero from "../Hero/Hero";
 import Work from "../Work/Work";
+import Earning from "../Earning/Earning";
 
 import billing_icon from "../../assets/billing.png";
 import business_icon from "../../assets/business.png";
@@ -13,9 +14,9 @@ import email_icon from "../../assets/email.png";
 import home_icon from "../../assets/home.png";
 import tick_icon from "../../assets/tick.png";
 import group_icon from "../../assets/groups.png";
-import Earning from "../Earning/Earning";
+import mssg_icon from "../../assets/mssg.png";
 
-const navItems = [   
+const navItems = [
   { label: "Home", icon: home_icon },
   { label: "Websites", icon: business_icon },
   { label: "Domain", icon: domain_icon, options: ["abcghjfjghj", "def"] },
@@ -27,6 +28,8 @@ const navItems = [
 ];
 
 const Body = ({ showSidebar }) => {
+  const [activeTab, setActiveTab] = useState("refer");
+
   return (
     <div className="body">
       <nav className={`navigations ${showSidebar ? "sidebar-visible" : ""}`}>
@@ -48,27 +51,43 @@ const Body = ({ showSidebar }) => {
             </li>
           ))}
           <div className="p-acct">
-            <img src={group_icon} alt="" />
+            <img src={group_icon} alt="account sharing" />
             <ul><li>Account Sharing</li></ul>
           </div>
         </ul>
       </nav>
+
       <div className="content">
         <div className="profit-container">
-          <div><p>Refer & earn</p><hr /></div>
-          <div><p>My earnings</p><hr /></div>
+          <div 
+            className={`tab-item ${activeTab === "refer" ? "active" : ""}`} 
+            onClick={() => setActiveTab("refer")}
+          >
+            <p>Refer & earn</p>
+            <hr />
+          </div>
+          <div 
+            className={`tab-item ${activeTab === "earnings" ? "active" : ""}`} 
+            onClick={() => setActiveTab("earnings")}
+          >
+            <p>My earnings</p>
+            <hr />
+          </div>
         </div>
-        <Hero />
-        <Work />
-        <Earning/>
+
+        {activeTab === "refer" && (
+          <>
+            <Hero />
+            <Work />
+          </>
+        )}
+        {activeTab === "earnings" && <Earning />}
       </div>
 
-      {/* <span>
-      <div className="mssg">
-          <div><img src={mssg_icon} alt="" /></div>
-          <div><img src={mssg_icon} alt="" /></div>
-        </div>
-      </span> */}
+  <div className="mssg-fixed">
+        <img src={mssg_icon} alt="message alert" />
+      </div>
+      
     </div>
   );
 };
