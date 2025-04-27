@@ -1,7 +1,7 @@
 import React from "react";
 import "./Earning.css";
-import i_icon from "../../assets/i.png";
-import group_icon from "../../assets/groups.png";
+import i_icon from "../../assets/second_i.png";
+import group_icon from "../../assets/second_grp.png";
 import gift_icon from "../../assets/gift.png";
 import pen_icon from "../../assets/pen.png";
 import copy_icon from "../../assets/copy.png";
