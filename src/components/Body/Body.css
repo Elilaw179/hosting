@@ -200,6 +200,9 @@
     padding: 0;
     align-items: center;
   }
+  .tab-item {
+    margin-right: 10px;
+  }
 
   .tab-item hr {
     width: 100px;
