@@ -86,7 +86,6 @@ const Earning = () => {
       <div className="faq-container">
         <h2>Refer & Earn FAQ</h2>
         <br />
-
         {faqQuestions.map((question, idx) => (
           <div className="questions" key={idx}>
             <div>
